@@ -5,11 +5,13 @@ Add Apache Cordova local notifications plugin created by running the command
 Download the latest release and copied the minified [ng-cordova file](https://github.com/makers-memoria/ionic-push/blob/master/www/js/ng-cordova.min.js).
 
 Require the [file](https://github.com/makers-memoria/ionic-push/blob/master/www/index.html#L19) in the `index.html`.
+
 ```<!-- cordova script (this will be a 404 during development) -->
     <script src="js/ng-cordova.min.js"></script>
     <script src="cordova.js"></script>```
 
 Inject [ng-Cordova](https://github.com/makers-memoria/ionic-push/blob/master/www/js/app.js#L6) into the `app.js` file.
+
 ```angular.module('starter', ['ionic', 'firebase', 'ngCordova'])
   .factory('Items', ['$firebaseArray',function($firebaseArray) {
   var itemsRef = new Firebase("https://glaring-heat-6736.firebaseio.com/");
