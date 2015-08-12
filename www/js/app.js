@@ -12,7 +12,7 @@ angular.module('starter', ['ionic', 'firebase', 'ngCordova'])
 
       $scope.add = function() {
         var alarmTime = new Date();
-        alarmTime.setMinutes(alarmTime.getMinutes() + 1);
+        alarmTime.setSeconds(alarmTime.getSeconds() + 10);
         $cordovaLocalNotification.add({
             id: "1234",
             date: alarmTime,
